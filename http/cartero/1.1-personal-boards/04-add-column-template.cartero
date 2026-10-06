@@ -1,0 +1,15 @@
+version = 1
+url = "{{BASE_URL}}/api/v1/boards/{{BOARD_ID}}/columns"
+method = "POST"
+body = "name=Revisi%C3%B3"
+
+[variables]
+BASE_URL = "http://127.0.0.1:8080"
+BOARD_ID = "1"
+CSRF_TOKEN = "REEMPLAZAR_EN_MEMORIA_SIN_GUARDAR"
+
+[headers]
+Accept = "application/json"
+Content-Type = "application/x-www-form-urlencoded"
+X-CSRF-Token = "{{CSRF_TOKEN}}"
+Sec-Fetch-Site = "same-origin"

@@ -1,0 +1,4 @@
+V001__create_schema_migrations.sql
+V002__create_learning_state.sql
+V003__create_pending_marker.sql
+V004__invalid_migration.sql

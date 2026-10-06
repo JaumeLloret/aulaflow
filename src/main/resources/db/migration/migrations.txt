@@ -1,0 +1,12 @@
+V001__create_schema_migrations.sql
+V002__create_administrators.sql
+V003__create_boards.sql
+V004__create_board_columns.sql
+V005__index_boards_by_owner.sql
+V006__index_columns_by_board.sql
+V007__create_cards.sql
+V008__index_cards_by_column.sql
+V009__create_labels.sql
+V010__create_card_labels.sql
+V011__create_checklist_items.sql
+V012__index_card_labels_by_label.sql

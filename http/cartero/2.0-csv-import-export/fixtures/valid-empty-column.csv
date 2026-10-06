@@ -1,0 +1,6 @@
+aulaflow_version,record_type,board_name,column_name,column_position,card_title,card_description,card_position
+1,BOARD,Tauler amb columna buida,,,,,
+1,COLUMN,Tauler amb columna buida,Per fer,0,,,
+1,COLUMN,Tauler amb columna buida,En curs,1,,,
+1,COLUMN,Tauler amb columna buida,Fet,2,,,
+1,CARD,Tauler amb columna buida,Per fer,0,Única targeta,,0

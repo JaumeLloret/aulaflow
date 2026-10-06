@@ -1,0 +1,8 @@
+aulaflow_version,record_type,board_name,column_name,column_position,card_title,card_description,card_position
+1,BOARD,Tablero de clase,,,,,
+1,COLUMN,Tablero de clase,Por hacer,0,,,
+1,COLUMN,Tablero de clase,En curso,1,,,
+1,COLUMN,Tablero de clase,Hecho,2,,,
+1,CARD,Tablero de clase,Por hacer,0,Preparar unidad 3,Revisar los objetivos de aprendizaje,0
+1,CARD,Tablero de clase,En curso,1,Reunión de departamento,Jueves a las 10h,0
+1,CARD,Tablero de clase,Hecho,2,Enviar notas,Ya enviadas a secretaría,0

@@ -1,0 +1,9 @@
+version = 1
+url = "{{BASE_URL}}"
+method = "GET"
+
+[variables]
+BASE_URL = "http://127.0.0.1:8080"
+
+[headers]
+Accept = "text/html"

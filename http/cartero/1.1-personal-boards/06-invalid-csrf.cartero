@@ -1,0 +1,13 @@
+version = 1
+url = "{{BASE_URL}}/api/v1/boards"
+method = "POST"
+body = "name=No+ha+de+crear-se"
+
+[variables]
+BASE_URL = "http://127.0.0.1:8080"
+
+[headers]
+Accept = "application/json"
+Content-Type = "application/x-www-form-urlencoded"
+X-CSRF-Token = "TOKEN_INVALID_NO_SECRET"
+Sec-Fetch-Site = "same-origin"
