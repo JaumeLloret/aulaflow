@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+            http-equiv="refresh"
+            content="0; url=/boards"
+    >
+
+    <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+            name="description"
+            content="Sessió administradora activa en AulaFlow."
+            data-i18n="account.document.description"
+            data-i18n-attribute="content"
+    >
+
+    <title data-i18n="account.document.title">
+        Sessió activa · AulaFlow
+    </title>
+
+    <link
+            rel="stylesheet"
+            href="/assets/css/app.css"
+    >
+</head>
+
+<body>
+<header class="site-header site-header--compact">
+    <a
+            class="brand-link"
+            href="/"
+            data-i18n="app.name"
+    >
+        AulaFlow
+    </a>
+
+    <p data-i18n="app.tagline">
+        Organitza el treball. Visualitza el progrés.
+    </p>
+
+    <div class="language-control">
+        <label
+                for="language-selector"
+                data-i18n="language.selector.label"
+        >
+            Idioma
+        </label>
+
+        <select
+                id="language-selector"
+                name="language"
+                disabled
+        >
+            <option
+                    value="ca"
+                    data-i18n="language.ca"
+                    selected
+            >
+                Valencià
+            </option>
+
+            <option
+                    value="es"
+                    data-i18n="language.es"
+            >
+                Castellà
+            </option>
+        </select>
+    </div>
+</header>
+
+<main class="auth-layout">
+    <section
+            class="auth-card"
+            aria-labelledby="account-title"
+    >
+        <h1
+                id="account-title"
+                data-i18n="account.title"
+        >
+            Sessió activa
+        </h1>
+
+        <p data-i18n="account.description">
+            La ruta privada ha validat la sessió administradora.
+        </p>
+
+        <p
+                class="scope-note"
+                data-i18n="account.scope"
+        >
+            Els taulers personals ja estan disponibles; les targetes
+            arribaran en increments posteriors.
+        </p>
+
+        <p>
+            <a
+                    class="button-link"
+                    href="/boards"
+                    data-i18n="nav.boards"
+            >
+                Taulers
+            </a>
+        </p>
+
+        <form
+                class="auth-form"
+                method="post"
+                action="/logout"
+        >
+            <input
+                    type="hidden"
+                    name="_csrf"
+                    value="{{CSRF_TOKEN}}"
+            >
+
+            <button
+                    class="secondary-button"
+                    type="submit"
+                    data-i18n="logout.submit"
+            >
+                Tancar sessió
+            </button>
+        </form>
+    </section>
+</main>
+
+<footer class="site-footer">
+    <p>
+        <span data-i18n="footer.project">AulaFlow 1.0</span>
+        ·
+        <span data-i18n="footer.increment">
+            Increment 1.0
+        </span>
+    </p>
+</footer>
+
+<script
+        src="/assets/js/app.js"
+        defer
+></script>
+</body>
+</html>

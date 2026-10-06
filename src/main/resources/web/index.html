@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+            http-equiv="refresh"
+            content="0; url=/login"
+    >
+
+    <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+            name="description"
+            content="AulaFlow, organització visual del treball acadèmic."
+            data-i18n="document.description"
+            data-i18n-attribute="content"
+    >
+
+    <title data-i18n="document.title">
+        AulaFlow
+    </title>
+
+    <link
+            rel="stylesheet"
+            href="/assets/css/app.css"
+    >
+</head>
+
+<body>
+<header class="site-header">
+    <h1 data-i18n="app.name">AulaFlow</h1>
+
+    <p data-i18n="app.tagline">
+        Organitza el treball. Visualitza el progrés.
+    </p>
+
+    <div class="language-control">
+        <label
+                for="language-selector"
+                data-i18n="language.selector.label"
+        >
+            Idioma
+        </label>
+
+        <select
+                id="language-selector"
+                name="language"
+                disabled
+        >
+            <option
+                    value="ca"
+                    data-i18n="language.ca"
+                    selected
+            >
+                Valencià
+            </option>
+
+            <option
+                    value="es"
+                    data-i18n="language.es"
+            >
+                Castellà
+            </option>
+        </select>
+    </div>
+</header>
+
+<main class="page-grid">
+    <section
+            class="status-card"
+            aria-labelledby="welcome-title"
+    >
+        <h2
+                id="welcome-title"
+                data-i18n="home.welcome.title"
+        >
+            Benvingut a AulaFlow
+        </h2>
+
+        <p data-i18n="home.welcome.description">
+            La base de l'aplicació està en funcionament.
+        </p>
+
+        <p class="card-action">
+            <a
+                    class="button-link"
+                    href="/login"
+                    data-i18n="home.login.link"
+            >
+                Iniciar sessió
+            </a>
+        </p>
+    </section>
+
+    <section
+            class="status-card"
+            aria-labelledby="status-title"
+    >
+        <h2
+                id="status-title"
+                data-i18n="home.status.title"
+        >
+            Estat del projecte
+        </h2>
+
+        <p data-i18n="home.status.description">
+            La interfície web està en construcció.
+        </p>
+        <p
+                class="runtime-status"
+                aria-live="polite"
+        >
+            <span
+                    class="runtime-status__pending"
+                    data-i18n="home.runtime.pending"
+            >
+                JavaScript pendent d'activació.
+            </span>
+
+            <span
+                    class="runtime-status__ready"
+                    data-i18n="home.runtime.ready"
+            >
+                JavaScript actiu.
+            </span>
+        </p>
+    </section>
+</main>
+
+<footer class="site-footer">
+    <p>
+        <span data-i18n="footer.project">AulaFlow 1.0</span>
+        ·
+        <span data-i18n="footer.increment">
+            Increment 1.0
+        </span>
+    </p>
+</footer>
+
+<script
+        src="/assets/js/app.js"
+        defer
+></script>
+</body>
+</html>

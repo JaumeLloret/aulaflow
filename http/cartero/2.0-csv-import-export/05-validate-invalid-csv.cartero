@@ -1,0 +1,17 @@
+version = 1
+url = "{{BASE_URL}}/api/v1/boards/import/validate"
+method = "POST"
+body = """
+record_type,aulaflow_version,board_name,column_name,column_position,card_title,card_description,card_position
+1,BOARD,Tauler amb capçalera incorrecta,,,,,
+"""
+
+[variables]
+BASE_URL = "http://127.0.0.1:8080"
+CSRF_TOKEN = "REEMPLAZAR_EN_MEMORIA_SIN_GUARDAR"
+
+[headers]
+Accept = "application/json"
+Content-Type = "text/csv; charset=UTF-8"
+X-CSRF-Token = "{{CSRF_TOKEN}}"
+Sec-Fetch-Site = "same-origin"

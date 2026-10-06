@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+            name="description"
+            content="Inici de sessió d'AulaFlow."
+            data-i18n="login.document.description"
+            data-i18n-attribute="content"
+    >
+
+    <title data-i18n="login.document.title">
+        Inici de sessió · AulaFlow
+    </title>
+
+    <link
+            rel="stylesheet"
+            href="/assets/css/app.css"
+    >
+</head>
+
+<body class="login-page">
+<main class="login-shell">
+    <section class="login-brand-panel" aria-label="AulaFlow">
+        <div class="brand-signature">
+            <span class="brand-mark" aria-hidden="true"></span>
+            <a
+                    class="brand-link"
+                    href="/"
+                    data-i18n="app.name"
+            >
+                AulaFlow
+            </a>
+        </div>
+
+        <div class="login-brand-copy">
+            <h1 data-i18n="app.tagline">
+                Organitza el treball. Visualitza el progrés.
+            </h1>
+            <p>AulaFlow 1.0</p>
+        </div>
+    </section>
+
+    <section class="login-content" aria-labelledby="login-title">
+        <div class="language-control language-control--login">
+            <label
+                    for="language-selector"
+                    data-i18n="language.selector.label"
+            >
+                Idioma
+            </label>
+
+            <select
+                    id="language-selector"
+                    name="language"
+                    disabled
+            >
+                <option
+                        value="ca"
+                        data-i18n="language.ca"
+                        selected
+                >
+                    Valencià
+                </option>
+
+                <option
+                        value="es"
+                        data-i18n="language.es"
+                >
+                    Castellà
+                </option>
+            </select>
+        </div>
+
+        <section class="auth-card">
+            <span class="auth-card__accent" aria-hidden="true"></span>
+
+            <h1
+                    id="login-title"
+                    data-i18n="login.title"
+            >
+                Inicia sessió
+            </h1>
+
+            <p data-i18n="login.description">
+                Accedeix amb l'administrador configurat en la instal·lació.
+            </p>
+
+            <p
+                    class="form-error"
+                    role="alert"
+                    data-auth-error
+                    hidden
+                    data-i18n="login.error.generic"
+            >
+                No s'han pogut validar les credencials.
+            </p>
+
+            <form
+                    class="auth-form"
+                    method="post"
+                    action="/login"
+                    accept-charset="UTF-8"
+            >
+                <div class="form-field">
+                    <label
+                            for="username"
+                            data-i18n="login.username.label"
+                    >
+                        Nom d'administrador
+                    </label>
+
+                    <input
+                            id="username"
+                            name="username"
+                            type="text"
+                            autocomplete="username"
+                            required
+                            minlength="3"
+                            maxlength="64"
+                            autofocus
+                    >
+                </div>
+
+                <div class="form-field">
+                    <label
+                            for="password"
+                            data-i18n="login.password.label"
+                    >
+                        Contrasenya
+                    </label>
+
+                    <input
+                            id="password"
+                            name="password"
+                            type="password"
+                            autocomplete="current-password"
+                            required
+                            minlength="15"
+                            maxlength="128"
+                    >
+                </div>
+
+                <button
+                        class="primary-button"
+                        type="submit"
+                        data-i18n="login.submit"
+                >
+                    Entrar
+                </button>
+            </form>
+        </section>
+
+        <footer class="site-footer site-footer--login">
+            <p>
+                <span data-i18n="footer.project">AulaFlow 1.0</span>
+                ·
+                <span data-i18n="footer.increment">
+                    Increment 1.0
+                </span>
+            </p>
+        </footer>
+    </section>
+</main>
+
+<script
+        src="/assets/js/app.js"
+        defer
+></script>
+</body>
+</html>

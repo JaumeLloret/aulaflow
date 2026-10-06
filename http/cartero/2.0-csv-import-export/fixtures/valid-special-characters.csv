@@ -1,0 +1,5 @@
+aulaflow_version,record_type,board_name,column_name,column_position,card_title,card_description,card_position
+1,BOARD,"Tauler, amb comes i ""cites""",,,,,
+1,COLUMN,"Tauler, amb comes i ""cites""",Revisió ñoño 🎓,0,,,
+1,CARD,"Tauler, amb comes i ""cites""",Revisió ñoño 🎓,0,"Línia 1
+Línia 2","Descripció amb coma, comilla ""interna"" i emoji 🎓",0

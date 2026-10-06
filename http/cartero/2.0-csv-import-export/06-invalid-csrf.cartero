@@ -1,0 +1,16 @@
+version = 1
+url = "{{BASE_URL}}/api/v1/boards/import/validate"
+method = "POST"
+body = """
+aulaflow_version,record_type,board_name,column_name,column_position,card_title,card_description,card_position
+1,BOARD,Tauler amb CSRF invalid,,,,,
+"""
+
+[variables]
+BASE_URL = "http://127.0.0.1:8080"
+
+[headers]
+Accept = "application/json"
+Content-Type = "text/csv; charset=UTF-8"
+X-CSRF-Token = "token-invalid-no-coincideix-amb-sessio"
+Sec-Fetch-Site = "same-origin"

@@ -1,0 +1,16 @@
+version = 1
+url = "{{BASE_URL}}/api/v1/boards/{{BOARD_ID}}/columns/order"
+method = "PUT"
+body = "order={{ORDERED_COLUMN_IDS}}"
+
+[variables]
+BASE_URL = "http://127.0.0.1:8080"
+BOARD_ID = "1"
+ORDERED_COLUMN_IDS = "4%2C3%2C2%2C1"
+CSRF_TOKEN = "REEMPLAZAR_EN_MEMORIA_SIN_GUARDAR"
+
+[headers]
+Accept = "application/json"
+Content-Type = "application/x-www-form-urlencoded"
+X-CSRF-Token = "{{CSRF_TOKEN}}"
+Sec-Fetch-Site = "same-origin"

@@ -1,0 +1,13 @@
+version = 1
+url = "{{BASE_URL}}/login"
+method = "POST"
+body = "username={{ADMIN_USERNAME}}&password={{ADMIN_PASSWORD}}"
+
+[variables]
+BASE_URL = "http://127.0.0.1:8080"
+ADMIN_USERNAME = "admin"
+ADMIN_PASSWORD = "REEMPLAZAR_SIN_GUARDAR"
+
+[headers]
+Accept = "text/html"
+Content-Type = "application/x-www-form-urlencoded"

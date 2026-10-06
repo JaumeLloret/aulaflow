@@ -1,0 +1,23 @@
+version = 1
+url = "{{BASE_URL}}/api/v1/boards/import/validate"
+method = "POST"
+body = """
+aulaflow_version,record_type,board_name,column_name,column_position,card_title,card_description,card_position
+1,BOARD,Tauler de classe,,,,,
+1,COLUMN,Tauler de classe,Per fer,0,,,
+1,COLUMN,Tauler de classe,En curs,1,,,
+1,COLUMN,Tauler de classe,Fet,2,,,
+1,CARD,Tauler de classe,Per fer,0,Preparar unitat 3,Revisar els objectius d'aprenentatge,0
+1,CARD,Tauler de classe,En curs,1,Reunió de departament,Dijous a les 10h,0
+1,CARD,Tauler de classe,Fet,2,Enviar notes,Ja enviades a secretaria,0
+"""
+
+[variables]
+BASE_URL = "http://127.0.0.1:8080"
+CSRF_TOKEN = "REEMPLAZAR_EN_MEMORIA_SIN_GUARDAR"
+
+[headers]
+Accept = "application/json"
+Content-Type = "text/csv; charset=UTF-8"
+X-CSRF-Token = "{{CSRF_TOKEN}}"
+Sec-Fetch-Site = "same-origin"

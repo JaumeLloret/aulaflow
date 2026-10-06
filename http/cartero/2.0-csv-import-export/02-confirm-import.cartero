@@ -1,0 +1,15 @@
+version = 1
+url = "{{BASE_URL}}/api/v1/boards/import"
+method = "POST"
+body = "token={{IMPORT_TOKEN}}"
+
+[variables]
+BASE_URL = "http://127.0.0.1:8080"
+CSRF_TOKEN = "REEMPLAZAR_EN_MEMORIA_SIN_GUARDAR"
+IMPORT_TOKEN = "REEMPLAZAR_CON_EL_TOKEN_DE_01"
+
+[headers]
+Accept = "application/json"
+Content-Type = "application/x-www-form-urlencoded"
+X-CSRF-Token = "{{CSRF_TOKEN}}"
+Sec-Fetch-Site = "same-origin"

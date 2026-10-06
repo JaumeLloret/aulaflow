@@ -1,0 +1,12 @@
+version = 1
+url = "{{BASE_URL}}/logout"
+method = "POST"
+body = "_csrf={{CSRF_TOKEN}}"
+
+[variables]
+BASE_URL = "http://127.0.0.1:8080"
+CSRF_TOKEN = "REEMPLAZAR_EN_MEMORIA_SIN_GUARDAR"
+
+[headers]
+Accept = "text/html"
+Content-Type = "application/x-www-form-urlencoded"

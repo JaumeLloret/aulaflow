@@ -1,0 +1,10 @@
+version = 1
+url = "{{BASE_URL}}/api/v1/boards/{{BOARD_ID}}/export.csv"
+method = "GET"
+
+[variables]
+BASE_URL = "http://127.0.0.1:8080"
+BOARD_ID = "REEMPLAZAR_CON_EL_ID_DE_02"
+
+[headers]
+Accept = "text/csv"

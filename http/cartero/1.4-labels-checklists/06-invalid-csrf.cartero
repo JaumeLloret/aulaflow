@@ -1,0 +1,13 @@
+version = 1
+url = "{{BASE_URL}}/api/v1/boards/{{BOARD_ID}}/labels"
+method = "POST"
+body = "name=Sense+token&color=gray"
+
+[variables]
+BASE_URL = "http://127.0.0.1:8080"
+BOARD_ID = "REEMPLAZAR_CON_ID_REAL"
+
+[headers]
+Accept = "application/json"
+Content-Type = "application/x-www-form-urlencoded"
+Sec-Fetch-Site = "same-origin"

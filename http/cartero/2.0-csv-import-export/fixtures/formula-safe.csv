@@ -1,0 +1,5 @@
+aulaflow_version,record_type,board_name,column_name,column_position,card_title,card_description,card_position
+1,BOARD,=cmd|' /C calc'!A0,,,,,
+1,COLUMN,=cmd|' /C calc'!A0,+SUM(A1:A2),0,,,
+1,CARD,=cmd|' /C calc'!A0,+SUM(A1:A2),0,-1+2,@cmd perillós,0
+1,CARD,=cmd|' /C calc'!A0,+SUM(A1:A2),0,'ja protegit,'text amb apòstrof,1

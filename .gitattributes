@@ -1,0 +1,19 @@
+# Normalizar los archivos de texto del repositorio.
+# Git almacenará los finales de línea como LF.
+* text=auto eol=lf
+
+# Los scripts nativos de Windows conservarán CRLF.
+*.bat text eol=crlf
+*.cmd text eol=crlf
+
+# Archivos binarios: Git no debe modificar su contenido.
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+*.pdf binary
+*.jar binary
+*.db binary
+*.sqlite binary
+*.bin binary
